@@ -1,0 +1,92 @@
+body {
+  background-color: #202733;
+  font-family: "Manrope", sans-serif;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.box {
+  background-color: #313a48;
+  border-radius: 15px;
+  padding: 10vw 6vw 6vw;
+  width: 70vw;
+  margin: auto;
+  box-shadow: 30px 50px 80px rgba(0, 0, 0, 0.100202);
+  position: relative;
+  margin-top: 140px;
+}
+.box p:nth-child(1) {
+  color: #53ffaa;
+  font-size: 12px;
+  letter-spacing: 4px;
+  margin-bottom: 36px;
+}
+.box p:nth-child(2) {
+  color: #cee3e9;
+  font-size: 22px;
+  font-weight: 600;
+  width: 60vw;
+  margin: auto;
+  line-height: 32px;
+  margin-bottom: 30px;
+}
+.hr {
+  width: 66vw;
+  margin: auto;
+  margin-bottom: 6vw;
+}
+
+.dice {
+  width: 24px;
+  height: 24px;
+}
+
+.dice-wrapper {
+  padding: 20px;
+  border-radius: 50%;
+  background-color: #53ffaa;
+  height: 24px;
+  width: 24px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 768px) {
+  .box {
+    width: 32vw;
+    padding: 50px;
+    margin-top: 14vw;
+  }
+  .hr {
+    width: 32vw;
+    margin-bottom: 50px;
+  }
+  .box p:nth-child(2) {
+    width: 28vw;
+    margin-bottom: 50px;
+  }
+  .box p:nth-child(1) {
+    font-size: 14px;
+  }
+  .dice-wrapper {
+    margin-top: 1vw;
+  }
+}
+
+@media (min-width: 1800px) {
+  .box p:nth-child(2) {
+    width: 20vw;
+  }
+
+  .hr {
+    width: 20vw;
+  }
+
+  .box {
+    width: 26vw;
+  }
+}
