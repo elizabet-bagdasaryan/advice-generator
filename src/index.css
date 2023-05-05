@@ -75,6 +75,34 @@ body {
   .dice-wrapper {
     margin-top: 1vw;
   }
+  .dice-wrapper:hover {
+    box-shadow: 0px 0px 40px #53ffaa;
+    cursor: pointer;
+  }
+  /* .dice {
+    animation-name: toggle-down;
+    animation-delay: 0.25s;
+    animation-duration: 0.75s;
+    animation-fill-mode: forwards;
+  }
+  @keyframes toggle-down {
+    100% {
+      transform: rotate(180deg);
+    }
+  } */
+
+  .animate-toggle-down {
+    animation-name: toggle-down;
+    animation-delay: 0.1s;
+    animation-duration: 0.7s;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes toggle-down {
+    100% {
+      transform: rotate(180deg);
+    }
+  }
 }
 
 @media (min-width: 1800px) {
