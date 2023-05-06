@@ -40,8 +40,7 @@ body {
 }
 
 .dice {
-  width: 24px;
-  height: 24px;
+  size: large;
 }
 
 .dice-wrapper {
@@ -56,7 +55,22 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+.yellow {
+  background-color: #fff333;
+}
+.green {
+  background-color: #53ffaa;
+}
+.blue {
+  background-color: #10d8c4;
+}
+.purple {
+  background-color: #9900ff;
+}
 
+.pink {
+  background-color: #ff0099;
+}
 @media (min-width: 768px) {
   .box {
     width: 32vw;
@@ -93,6 +107,22 @@ body {
     100% {
       transform: rotate(180deg);
     }
+  }
+
+  .yellow:hover {
+    box-shadow: 0px 0px 40px #fff333;
+  }
+  .green:hover {
+    box-shadow: 0px 0px 40px #53ffaa;
+  }
+  .blue:hover {
+    box-shadow: 0px 0px 40px #10d8c4;
+  }
+  .purple:hover {
+    box-shadow: 0px 0px 40px #9900ff;
+  }
+  .pink:hover {
+    box-shadow: 0px 0px 40px #ff0099;
   }
 }
 

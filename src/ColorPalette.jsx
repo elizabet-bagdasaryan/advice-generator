@@ -2,7 +2,7 @@ import { useState } from "react";
 import "./ColorPalette.css";
 import PaletteIcon from "@mui/icons-material/Palette";
 
-function ColorPalette() {
+function ColorPalette(props) {
   const [isAnimatedPalette, setIsAnimatedPalette] = useState(false);
   const [isActive, setIsActive] = useState(false);
   const [paletteKey, setPaletteKey] = useState(0);
@@ -23,26 +23,31 @@ function ColorPalette() {
         <div
           style={{ display: isActive ? "block" : "none" }}
           className="one animate pop delay-1"
+          onClick={props.handleYellow}
         ></div>
         <div
           style={{ display: isActive ? "block" : "none" }}
           className="two animate slide delay-2"
+          onClick={props.handleGreen}
         ></div>
         <div
           style={{ display: isActive ? "block" : "none" }}
           className="three animate blur delay-3"
+          onClick={props.handleBlue}
         >
           {" "}
         </div>
         <div
           style={{ display: isActive ? "block" : "none" }}
           className="four animate grow delay-4"
+          onClick={props.handlePurple}
         >
           {" "}
         </div>
         <div
           style={{ display: isActive ? "block" : "none" }}
           className="five animate splat delay-5"
+          onClick={props.handlePink}
         >
           {" "}
         </div>
@@ -56,4 +61,5 @@ function ColorPalette() {
     </>
   );
 }
+
 export default ColorPalette;
