@@ -71,6 +71,19 @@ body {
 .pink {
   background-color: #ff0099;
 }
+
+.animate-toggle-down {
+  animation-name: toggle-down;
+  animation-delay: 0.1s;
+  animation-duration: 0.7s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes toggle-down {
+  100% {
+    transform: rotate(180deg);
+  }
+}
 @media (min-width: 768px) {
   .box {
     width: 32vw;
@@ -94,19 +107,6 @@ body {
   .dice-wrapper:hover {
     box-shadow: 0px 0px 40px #53ffaa;
     cursor: pointer;
-  }
-
-  .animate-toggle-down {
-    animation-name: toggle-down;
-    animation-delay: 0.1s;
-    animation-duration: 0.7s;
-    animation-fill-mode: forwards;
-  }
-
-  @keyframes toggle-down {
-    100% {
-      transform: rotate(180deg);
-    }
   }
 
   .yellow:hover {
