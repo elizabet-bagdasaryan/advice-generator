@@ -1,0 +1,49 @@
+.palette {
+  color: #cee3e9;
+  cursor: pointer;
+  margin-top: 6px;
+  margin-left: 8px;
+}
+
+.colors-wrapper div {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: #53ffaa;
+  margin: 8px;
+}
+
+.colors-wrapper div:nth-child(2) {
+  background-color: #53ffaa;
+}
+
+.colors-wrapper div:nth-child(3) {
+  background-color: #10d8c4;
+}
+.colors-wrapper div:nth-child(1) {
+  background-color: #ffff33;
+}
+.colors-wrapper div:nth-child(4) {
+  background-color: #9900ff;
+}
+.colors-wrapper div:nth-child(5) {
+  background-color: #ff0099;
+}
+
+.colors-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.animate-toggle {
+  animation-name: toggle;
+  animation-delay: 0.1s;
+  animation-duration: 0.7s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes toggle {
+  100% {
+    transform: rotate(180deg);
+  }
+}

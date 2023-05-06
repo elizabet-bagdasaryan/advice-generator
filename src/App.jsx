@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
-import HR from "./assets/hr.png";
-import HRDesk from "./assets/hr-desktop.png";
+import HR from "./assets/hr-desktop.png";
 import Dice from "./assets/dice.png";
 import "./App.css";
-
+import ColorPalette from "./ColorPalette";
 function App() {
   const [isAnimated, setIsAnimated] = useState(false);
+
   const [advices, setAdvices] = useState([
     { advice: "Loading advice...", id: 0 },
   ]);
@@ -29,10 +29,9 @@ function App() {
       .catch((err) => console.log(err));
   }, []);
 
-  console.log(advices);
-
   return (
     <>
+      <ColorPalette></ColorPalette>
       <div className="box">
         {advices.length > 0 &&
           advices.map((r, i) => (
@@ -41,7 +40,7 @@ function App() {
               <p>{r.advice}</p>
             </div>
           ))}
-        <img src={HRDesk} className="hr" />
+        <img src={HR} className="hr" />
         <div
           className={`dice-wrapper ${isAnimated ? "animate-toggle-down" : ""}`}
           onClick={handleClick}
@@ -50,8 +49,6 @@ function App() {
           <img src={Dice} className="dice" onClick={handleClick}></img>
         </div>
       </div>
-
-      <div className="advices"></div>
     </>
   );
 }
