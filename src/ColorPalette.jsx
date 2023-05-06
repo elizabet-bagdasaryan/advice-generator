@@ -19,12 +19,33 @@ function ColorPalette() {
 
   return (
     <>
-      <div className="colors-wrapper">
-        <div style={{ display: isActive ? "block" : "none" }}></div>
-        <div style={{ display: isActive ? "block" : "none" }}></div>
-        <div style={{ display: isActive ? "block" : "none" }}> </div>
-        <div style={{ display: isActive ? "block" : "none" }}> </div>
-        <div style={{ display: isActive ? "block" : "none" }}> </div>
+      <div className="container animate flip">
+        <div
+          style={{ display: isActive ? "block" : "none" }}
+          className="one animate pop delay-1"
+        ></div>
+        <div
+          style={{ display: isActive ? "block" : "none" }}
+          className="two animate slide delay-2"
+        ></div>
+        <div
+          style={{ display: isActive ? "block" : "none" }}
+          className="three animate blur delay-3"
+        >
+          {" "}
+        </div>
+        <div
+          style={{ display: isActive ? "block" : "none" }}
+          className="four animate grow delay-4"
+        >
+          {" "}
+        </div>
+        <div
+          style={{ display: isActive ? "block" : "none" }}
+          className="five animate splat delay-5"
+        >
+          {" "}
+        </div>
         <PaletteIcon
           key={paletteKey}
           className={`palette ${isAnimatedPalette ? "animate-toggle" : ""}`}
