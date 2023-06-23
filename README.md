@@ -1,6 +1,6 @@
 # Advice Generator App
 
-![Alt text](https://res.cloudinary.com/dz209s6jk/image/upload/f_auto,q_auto,w_700/Challenges/l0nkljeqewyxuw0vedhd.jpg)
+![Alt text](https://res.cloudinary.com/dz209s6jk/image/upload/v1645105312/Challenges/syo43ktrlu3huqaqye2c.jpg)
 
 ## Description
 The Advice Generator is a simple application that provides users with random advice and guidance on various aspects of life. It aims to offer helpful and insightful suggestions to assist users in making decisions, solving problems, and improving their overall well-being. Whether you're seeking advice on relationships, career choices, personal development, or any other area, the Advice Generator has got you covered.
